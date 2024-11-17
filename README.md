@@ -22,6 +22,14 @@ The **Claire's Place Foundation** is a non-profit organization that provides emo
 3. **Work Proudly Program**:
    - Provides job training and resources for work-from-home employment to CF adults and caregivers.
 
+## Repository Contents
+
+This repository includes:
+1. **`Claire's Place_Analysis.R`**: The R script containing the analysis, which explores the foundation's data using advanced statistical techniques such as regression, clustering, and hypothesis testing.
+2. **`Claires_Data_updated(2).xlsx`**: The dataset with anonymized information on grant applications, including amounts requested, amounts granted, and applicant demographics.
+3. **`Claires Place_Write Up.pdf`**: An executive summary that outlines key findings and recommendations for Claire's Place Foundation.
+4. **`README.md`**: This file provides an overview of the project, its goals, and instructions for replicating the analysis.
+
 ## Dataset Information
 
 The dataset captures all Extended Hospital Stay Fund (EHSG) grant applications submitted since February 2020. Key details include:
@@ -33,34 +41,24 @@ The dataset captures all Extended Hospital Stay Fund (EHSG) grant applications s
   - Average grant per applicant: $500–$3,000.
   - Exclusions: Credit card and hospital bills.
 
-## Repository Contents
-
-This repository includes:
-1. **R Script**: The analysis script, which explores the foundation's data using advanced statistical techniques such as regression, clustering, and hypothesis testing.
-2. **Dataset**: Contains anonymized information on grant applications, amounts requested, amounts granted, and applicant demographics.
-3. **Final Report**: An executive summary that outlines key findings and recommendations for Claire's Place Foundation.
-4. **README File**: An overview of the project, its goals, and instructions for replicating the analysis.
-
-## Key Findings
-
-1. Over 50% of the total grants (~$183,000) were distributed across five states: California, Florida, Texas, Georgia, and Ohio.
-2. Adults tend to request significantly more funds than adolescents, but adolescents, on average, receive marginally higher grant amounts for smaller requests.
-3. The foundation predominantly supports low- and middle-income families, covering essential expenses such as rent and mortgages.
-
 ## Instructions
 
-### How to Replicate the Analysis:
-1. Clone the repository:
-   ```bash
-   git clone [repository-link]
-   ```
-2. Install the required R packages:
+### How to Replicate the Analysis
+1. **Install the required R packages**:
    ```R
    install.packages(c("readxl", "tidyverse", "moderndive", "infer", "GGally", "lubridate", "glmnet"))
    ```
-3. Load the R script (`claires_place_analysis.R`) and run it in RStudio or a similar IDE.
-4. Use the dataset (`claires_data.xlsx`) as the input file.
+2. **Run the R script**:
+   - Open `Claire's Place_Analysis.R` in RStudio or a similar IDE.
+   - Ensure `Claires_Data_updated(2).xlsx` is in the working directory.
+   - Execute the script step by step to reproduce the analysis.
+3. **Review the Outputs**:
+   - The script generates statistical summaries, visualizations, and regression models to evaluate the foundation's impact.
+
+## Contact
+
+For questions or collaboration opportunities, please reach out to [solisgab@usc.edu](mailto:solisgab@usc.edu).
 
 ---
 
-We hope this repository serves as a valuable resource for understanding and enhancing the incredible impact of the Claire's Place Foundation. For questions or collaboration opportunities, please reach out to [solisgab@usc.edu](mailto:solisgab@usc.edu).
+This README provides a structured overview of the repository and enhances clarity for users replicating the analysis.
